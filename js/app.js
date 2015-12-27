@@ -1,14 +1,18 @@
 /**
  * Created by tdadam on 12/21/15.
  */
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 (function(){
     'use strict';
 
     angular.module('basicApp', [
             "ui.router",
-            "navController",
-            "basicController",
-            "listService"
+            "navController"
         ])
 
         .config(["$stateProvider", "$urlRouterProvider",
@@ -19,11 +23,11 @@
                     .state("intro", {
                         url: "/intro",
                         templateUrl: "templates/intro.html"
-                        controller: null
+                        //controller: null
                     })
                     .state("portfolio", {
                         url: "/portfolio",
-                        templateUrl: "templates/portfolio.html"
+                        templateUrl: "templates/portfolio.html",
                         controller: null
                     })
                     .state("resume", {
@@ -67,7 +71,7 @@
                     //});
 
                 // if none of the above states are matched, use this as the fallback
-                $urlRouterProvider.otherwise("/home");
+                $urlRouterProvider.otherwise("/intro");
             }]);
 
 }());
