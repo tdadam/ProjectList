@@ -10,17 +10,16 @@
 
 </head>
 <body ng-controller="navController as nav" layout="row">
-<md-sidenav layout="column" class="sidenav1" md-is-locked-open='true'>
+<md-sidenav layout="column" class="sidenav1" md-is-locked-open='true' ng-cloak>
 
-    <a ui-sref="intro" class="navbar-brand">My Projects</a>
-    <a ui-sref="intro">Introduction</a>
-    <a ui-sref="portfolio">Portfolio</a>
-    <a ui-sref="resume">Resume</a>
-    <a ui-sref="golf">Golf Card</a>
-    <a ui-sref="gameFlappy">Game (Flappy Mech)</a>
-    <a ui-sref="todo">To Do List</a>
-    <a ui-sref="coming">Coming Soon!</a>
-    <a ui-sref="ytvids">YouTube!!</a>
+    <md-button class="md-raised" ui-sref="intro">Home</md-button>
+    <md-button class="md-raised" ui-sref="portfolio">Portfolio</md-button>
+    <md-button class="md-raised" ui-sref="resume">Resume</md-button>
+    <md-button class="md-raised" ui-sref="golf">Golf Card</md-button>
+    <md-button class="md-raised" ui-sref="gameFlappy">Web Game</md-button>
+    <md-button class="md-raised" ui-sref="todo">To Do List</md-button>
+    <md-button class="md-raised" ui-sref="coming">Coming Soon!</md-button>
+    <md-button class="md-raised" ui-sref="ytvids">YouTube!!</md-button>
 
 </md-sidenav>
 
