@@ -12,7 +12,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 
     angular.module('basicApp', [
             "ui.router",
-            "navController"
+            "navController",
+            "ngMaterial"
         ])
 
         .config(["$stateProvider", "$urlRouterProvider",
@@ -60,15 +61,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
                         templateUrl: "templates/ytvids.html",
                         controller: null
                     });
-                    //.state("home", {
-                    //    url: "/home",
-                    //    templateUrl: "templates/home.html",
-                    //    controller: "basicController as bc"
-                    //})
-                    //.state("about", {
-                    //    url: "/about",
-                    //    templateUrl: "templates/about.html"
-                    //});
 
                 // if none of the above states are matched, use this as the fallback
                 $urlRouterProvider.otherwise("/intro");

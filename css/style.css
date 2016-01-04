@@ -41,3 +41,14 @@ body{
         display:block !important;
     }
 }
+md-sidenav  {
+    width: 15%;
+    height:100%;
+    padding:20px;
+    background-color: #18167b;
+}
+md-content {
+    /*background-color : tan;*/
+    height:100%;
+    padding:20px;
+}
