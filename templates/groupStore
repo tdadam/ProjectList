@@ -1,0 +1,18 @@
+<h3>Store Project (Angular capstone, group project)</h3>
+<div>This will be another project using the Angular framework, with some store / product functionality. It is a group project.</div>
+<div>
+    <h4>Features:</h4>
+    <ul>
+        <li>First group project</li>
+        <li>My work: Login using Facebook, Google, or email/password</li>
+        <li>Team: search Wal-Mart product list, page layout</li>
+    </ul>
+</div>
+<div>
+    <h4>Link:</h4>
+    <a href="http://tdadam.github.io/ngStoreProject" target="_new"></a>
+</div>
+<div>
+    <h4>Screenshot:</h4>
+    <h5>Patience is a virtue!</h5>
+</div>
