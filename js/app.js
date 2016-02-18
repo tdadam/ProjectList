@@ -51,6 +51,11 @@ $(document).on('click','.navbar-collapse.in',function(e) {
                         templateUrl: "templates/todo.html",
                         controller: null
                     })
+                    .state("groupStore", {
+                        url: "/group_store",
+                        templateUrl: "templates/groupStore.html",
+                        controller: null
+                    })
                     .state("coming", {
                         url: "/coming",
                         templateUrl: "templates/coming.html",
